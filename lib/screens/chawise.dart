@@ -327,7 +327,6 @@ class _CHAWisePageState extends State<CHAWisePage> {
                               final chaName = item['CHANAME']?.toString() ?? 'Unknown';
                               final pnr20 = int.tryParse(item['PNR20']?.toString() ?? '0') ?? 0;
                               final pnr40 = int.tryParse(item['PNR40']?.toString() ?? '0') ?? 0;
-                              final total = int.tryParse(item['TOTAL']?.toString() ?? '0') ?? 0;
                               final teus = int.tryParse(item['TUES']?.toString() ?? '0') ?? 0;
 
                               return Card(
