@@ -6,6 +6,7 @@ import 'importtracker.dart';
 import 'exportwisein.dart';
 import 'exportwiseout.dart';
 import 'chawise.dart';
+import 'Exporttracker.dart';
 
 class IndexPage extends StatefulWidget {
   const IndexPage({super.key});
@@ -73,7 +74,7 @@ class _IndexPageState extends State<IndexPage> {
                   children: [
                     const SizedBox(height: 40),
                     const Text(
-                      'Your Global Trade Dashboard',
+                      'SANCO DASHBOARD',
                       style: TextStyle(
                         fontSize: 20,
                         color: Colors.white,
@@ -100,7 +101,12 @@ class _IndexPageState extends State<IndexPage> {
                         _buildMenuItem(
                           icon: Icons.trending_up,
                           label: "Export Tracker",
-                          onPressed: () {},
+                        onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => const ExportTracker()),
+                            );
+                          },
                           color: Colors.deepPurple,
                         ),
                         _buildMenuItem(
